@@ -1,0 +1,276 @@
+body{
+  font-size: 13px;
+}
+td, th {
+  padding: 8px;
+  font-weight: 300;
+  border-bottom: 1px solid #ddd; 
+  max-width: 100px;
+}
+button {
+  cursor: pointer;
+}
+td::odd {
+  background-color: #111;
+}
+td input {
+  width: 50px;
+}
+ul, div, p {
+	margin: auto;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0px
+}
+a {
+  color: #fff;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+.App {
+  text-align: left;
+  margin: auto
+}
+.tag {
+  background-color: #13bdc1;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 3px;
+  color: #fff;
+  margin: 0px 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+div::after {
+  content: '';
+  clear: both;
+  display: block
+}
+.login {
+  vertical-align: top;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2em;
+  width: 40%;
+  display: inline-block;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+.login p {
+  margin: .5em 0px
+}
+.login span {
+  display: inline-block;
+  width: 100px;
+}
+.login input {
+  padding: .5em;
+  min-width: 50%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+.home {
+  height: 550px;
+}
+.home-inner {
+  margin-top: 50px;
+  text-align: left;
+  width: 80%;
+ 
+}
+.welcome {
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 50px;
+ 
+}
+.menu-list {
+  display: inline-block;
+}
+.menu-select {
+  display: none;
+  margin: 10px 0px;
+ 
+  border-radius: 3px;
+  padding: .5em;
+}
+.user {
+  margin-left: 10%;
+  display: inline-block;
+}
+.dialog {
+  border-radius: 4px;
+  width: 40%;
+  max-width: 600px;
+}
+.dialog table{
+  margin: 10px 0px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  color: #fff;
+  margin-top: 60px;
+  text-align: center;
+  padding: 40px 20%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.footer  div{ 
+   display: inline-block;
+   width: 30%;
+   margin: 10px ;
+   box-sizing: border-box;
+   min-width: 200px;
+}
+
+.footer  h1{ 
+  height: 40px;
+  line-height: 40px;
+}
+.footer  p{ 
+  height: 140px;
+}
+.indicator{
+  text-align: center;
+  margin-top: 20px;
+}
+.indicator li {
+  border: 1px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+.slide {
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff
+}
+
+@media (max-width: 1024px) {
+  .productlist {
+    text-align: center;
+  }
+  .menu-list {
+    display: none; 
+  }
+  .menu-select {
+    display: block;
+    width: 100%;  
+  }
+  .user {
+    display: block;
+    text-align: center;
+    margin-left: 0%;
+  }
+  .login {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .welcome { 
+    width: 100%;
+  }
+  .dialog {
+    width: 90%;
+  }
+}
+
+
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: rgb(0, 144, 238);
+  background: -moz-linear-gradient(left, rgb(0, 144, 238) 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, rgb(0, 144, 238) 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, rgb(0, 144, 238) 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, rgb(0, 144, 238) 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, rgb(0, 144, 238) 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: rgb(0, 144, 238);
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader .after {
+  background: #fff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
